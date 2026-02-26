@@ -188,3 +188,109 @@ footer {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+/* ========================= */
+/* EDUCATION PAGE LAYOUT */
+/* ========================= */
+
+.page-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.sidebar {
+  width: 260px;
+  padding-right: 40px;
+}
+
+.sidebar h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav a {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.sidebar nav a.active {
+  color: #2a6df4;
+  font-weight: 500;
+}
+
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Content */
+.main-content {
+  flex: 1;
+  max-width: 720px;
+}
+
+
+/* academic typography */
+.main-content h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.main-content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.main-content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.main-content p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+
+/* intro paragraph */
+.intro-text {
+  font-size: 18px;
+  color: #444;
+}
+
+
+/* responsive (mobile) */
+@media (max-width: 900px) {
+
+  .page-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
